@@ -10,7 +10,7 @@ def test_similarity_no_ratings():
     being all zeros with the other vector not being all zeros.  
     """
 
-    assert math.isclose(similarity([0], [0]), 0.0, abs_tol=0.0001)    
+    assert math.isclose(similarity([0], [0]), 0.0, abs_tol=0.0001)
     assert math.isclose(similarity([1], [0]), 0.0, abs_tol=0.0001)
     assert math.isclose(similarity([0], [1]), 0.0, abs_tol=0.0001)
     assert math.isclose(similarity([0, 0], [0, 0]), 0.0, abs_tol=0.0001)
@@ -27,11 +27,11 @@ def test_similarity_identical_books():
     """
     This test sends two identical vectors to the recsys.similarity function
     and asserts that the similarity is reported to be 1.0 within a tolerance of
-    0.0001.  The test checks many different vectors and lengths of vectors 
+    0.0001.  The test checks many different vectors and lengths of vectors
     (typical vector lengths of 1 to 3).  Note that an all zero vector has 
     a similarity of zero with itself and not similarity of 1.
     """
-    # To test that two numbers, actual and expected, are within 0.0001 of 
+    # To test that two numbers, actual and expected, are within 0.0001 of
     #  each other, do:
     #  assert math.isclose(actual, expected, abs_tol=0.0001)
     #
@@ -50,7 +50,7 @@ def test_similarity_diff_books():
     and asserts that the similarity is reported to be within a tolerance of
     0.0001 of the hand computed cosine similarity.  The test checks many 
     different vector pairs and lengths of vectors (typical vector lengths of
-    1 to 3). 
+    1 to 3).
     """
 
     assert math.isclose(similarity([5], [3]), 1.0, abs_tol=0.0001)
