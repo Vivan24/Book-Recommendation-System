@@ -1,4 +1,4 @@
-from most_similar_books import main
+from src.most_similar_books import main
 import os
 
 def test_most_similar_books_main():

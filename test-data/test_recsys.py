@@ -1,5 +1,5 @@
 import math
-from recsys import similarity
+from src.recsys import similarity
 
 def test_similarity_no_ratings():
     """
