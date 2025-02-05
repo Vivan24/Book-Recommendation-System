@@ -39,7 +39,7 @@ This project implements a book recommendation system using **cosine similarity**
    git clone <repository-url>
    cd <repository-folder>
    ```
-2. Create a virtual environment (optional but recommended):
+2. Create a virtual environment (optional):
    ```sh
    python -m venv venv
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
