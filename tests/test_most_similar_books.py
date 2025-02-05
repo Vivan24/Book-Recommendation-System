@@ -11,15 +11,19 @@ from src.most_similar_books import main
 import os
 
 def test_most_similar_books_main():
-    # the correct answers as computed by the instructor, do not edit
-    # the most-similar-books-correct-answer.txt file or you will mess up
-    # this test!
+    """
+    The correct answers. Do NOT edit the 
+    most-similar-books-correct-answer.txt file 
+    or you will mess up this test!
+    """
+
     correct_file = config.TEST_CORRECT_DATA.open("r")
 
     main() # when main runs, it should write out most-similar-books.txt
     actual_output_filename = config.DATA_OUTPUT
     actual_file = open(actual_output_filename, "r")
 
+    # reads both files side by side and checks if each line is exactly the same
     correct_line = correct_file.readline()
     actual_line = actual_file.readline()
     while correct_line != "":

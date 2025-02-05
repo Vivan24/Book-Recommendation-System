@@ -3,13 +3,13 @@ from pathlib import Path
 # Project root
 ROOT = Path(__file__).parent
 
-# 'data' folder
+# 'data' folder paths
 DATA_DIR = ROOT / "data"
 DATA_RATINGS = DATA_DIR / "ratings.txt"
 DATA_BOOKS = DATA_DIR / "books.txt"
 DATA_OUTPUT = DATA_DIR / "output-similar-books.txt"
 
-# 'test-data' folder
+# 'test-data' folder paths
 TEST_DATA_DIR = ROOT / "tests" / "test-data"
 TEST_DATA_BOOKS = TEST_DATA_DIR / "small-test-books.txt"
 TEST_DATA_RATINGS = TEST_DATA_DIR / "small-test-ratings.txt"
