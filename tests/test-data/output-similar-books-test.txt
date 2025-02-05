@@ -1,0 +1,3 @@
+People who liked A, also liked C. (Score = 0.615)
+People who liked B, also liked C. (Score = 0.000)
+People who liked C, also liked A. (Score = 0.615)
